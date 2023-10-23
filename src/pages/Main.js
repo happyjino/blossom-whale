@@ -1,7 +1,37 @@
 import TopNavigation from "../components/TopNavigation";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 import '../css/Main.css';
+import { useEffect, useState } from "react";
 
 const Main = () => {
+
+  const [slideImgList, setSlideImgList] = useState([])
+  const imgSrcList = ['NEW_8134', 'NEW_8007', 'NEW_4238', 'SU1_9714']
+
+  const handleImgError = (e) => {
+    e.target.src = "Logo.jpg";
+  };
+
+  useEffect(() => {
+    const tempImgList = imgSrcList.map((item, idx) => (
+      <SwiperSlide key={idx} className="img-slide">
+        {/* <img
+          src={process.env.PUBLIC_URL + 'assets/NEW_8134.jpg'}
+          alt="대표이미지"
+          onError={handleImgError}
+        /> */}
+        <img src={process.env.PUBLIC_URL + `assets/${item}.jpg`} />
+      </SwiperSlide>
+    ));
+    setSlideImgList(tempImgList);
+  }, [])
+
+  
 
   return (
     <div className="main-page">
@@ -63,10 +93,18 @@ const Main = () => {
         <span class="material-symbols-outlined">arrow_forward_ios</span>
       </div>
       <div className="section4">
-        <img src={process.env.PUBLIC_URL + 'assets/NEW_8134.jpg'} />
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          // spaceBetween={5} slidesPerView={1.5} //간격, 보여질 컨텐츠 수
+          slidesPerView={2} //간격, 보여질 컨텐츠 수
+          scrollbar={{ draggable: true }} className="dog-swiper-list" //드래그
+        >
+          {slideImgList} 
+        </Swiper>
+        {/* <img src={process.env.PUBLIC_URL + 'assets/NEW_8134.jpg'} />
         <img src={process.env.PUBLIC_URL + 'assets/NEW_8007.jpg'} />
         <img src={process.env.PUBLIC_URL + 'assets/NEW_4238.jpg'} />
-        <img src={process.env.PUBLIC_URL + 'assets/SU1_9714.jpg'} />
+        <img src={process.env.PUBLIC_URL + 'assets/SU1_9714.jpg'} /> */}
       </div>
     </div>
   )
