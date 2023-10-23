@@ -1,0 +1,69 @@
+.top-nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-nav .first-line {
+  display: flex;
+  background-color: white;
+  justify-content: right;
+}
+
+.top-nav .first-line .logo-box {
+  margin-right: 0.2em;
+}
+
+.top-nav .first-line .logo-box span {
+  font-size: 1.7em;
+  color: #4e4e4e;
+  padding: 0.7em 0em;
+  margin: 0em 0.4em;
+  cursor: pointer;
+}
+
+.top-nav .first-line .tel-box {
+  padding: 0.5em 1em;
+  background-color: #4e4e4e;
+  
+  color: #FDD900;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.top-nav .second-line {
+  display: flex;
+  background-color: #FDD900;
+  justify-content: space-between;
+}
+
+.top-nav .main-logo {
+  padding: 0em 4em;
+  justify-content: flex-start;
+}
+
+.top-nav .main-logo img {
+  width: 6em;
+  height: 100%;
+}
+
+.top-nav .menu-list {
+  display: flex;
+  padding: 0em 5em;
+  align-items: center;
+}
+
+.top-nav .menu-list div {
+  width: 7em;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #4e4e4e;
+  cursor: pointer;
+}
+
+.top-nav .menu-list div:hover {
+  color: #ffffff;
+}
