@@ -7,15 +7,14 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import '../css/Main.css';
 import { useEffect, useState } from "react";
+import BottomInfo from "../components/BottomInfo";
 
 const Main = () => {
 
   const [slideImgList, setSlideImgList] = useState([])
   const imgSrcList = ['NEW_8134', 'NEW_8007', 'NEW_4238', 'SU1_9714']
 
-  const handleImgError = (e) => {
-    e.target.src = "Logo.jpg";
-  };
+  const productDes = "꽃피는 고래는 \n 유럽형 상추를 \n 수경재배하고 있습니다."
 
   useEffect(() => {
     const tempImgList = imgSrcList.map((item, idx) => (
@@ -51,7 +50,7 @@ const Main = () => {
           </p>
           <div className="cate-link">
             <div>
-              <button>FARMER</button>
+              <div className="link-button">FARMER</div>
               <ul>
                 <li>Smart farm</li>
                 <li>청년 농부</li>
@@ -59,7 +58,7 @@ const Main = () => {
               </ul>
             </div>
             <div>
-              <button>CUCUMBER</button>
+              <div className="link-button">CUCUMBER</div>
               <ul>
                 <li>미니오이</li>
                 <li>백다다기</li>
@@ -67,14 +66,14 @@ const Main = () => {
               </ul>
             </div>
             <div>
-              <button>SERVICES</button>
+              <div className="link-button">SERVICES</div>
               <ul>
                 <li>스마트팜 농장 체험/교육</li>
                 <li>스마트 농부 아카데미</li>
               </ul>
             </div>
             <div>
-              <button>PRODUCTS</button>
+              <div className="link-button">PRODUCTS</div>
               <ul>
                 <li>GREEN MONSTERS</li>
                 <li>캐릭터 상품</li>
@@ -96,7 +95,12 @@ const Main = () => {
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           // spaceBetween={5} slidesPerView={1.5} //간격, 보여질 컨텐츠 수
-          slidesPerView={2} //간격, 보여질 컨텐츠 수
+          slidesPerView={1} //간격, 보여질 컨텐츠 수
+          breakpoints={{
+            486: {
+              slidesPerView: 1.5
+            }
+          }}
           scrollbar={{ draggable: true }} className="dog-swiper-list" //드래그
         >
           {slideImgList} 
@@ -106,6 +110,15 @@ const Main = () => {
         <img src={process.env.PUBLIC_URL + 'assets/NEW_4238.jpg'} />
         <img src={process.env.PUBLIC_URL + 'assets/SU1_9714.jpg'} /> */}
       </div>
+      <div className="section5">
+        <div className="product-part">
+          <p className="product-title">Whale's VEGETABLE!</p>
+          <p className="product-des">{productDes}</p>
+          <div className="link-button">재배작물 보러가기</div>
+        </div>
+        <img src={process.env.PUBLIC_URL + 'Logo.jpg'} />
+      </div>
+      <BottomInfo />
     </div>
   )
 }

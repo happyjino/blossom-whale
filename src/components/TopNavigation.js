@@ -16,6 +16,7 @@ const TopNavigation = () => {
           <img src={process.env.PUBLIC_URL + 'Logo.jpg'} />
         </div>
         <div className="menu-list">
+          <span class="material-symbols-outlined">menu</span>
           <div>HOME</div>
           <div>ABOUT US</div>
           <div>SERVICES</div>
