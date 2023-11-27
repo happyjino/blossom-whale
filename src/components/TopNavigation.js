@@ -1,4 +1,28 @@
+import { useNavigate } from "react-router-dom";
+
 const TopNavigation = () => {
+
+  const navigate = useNavigate();
+
+  const goHome = () => {
+    navigate('/')
+  }
+
+  const goCompany = () => {
+    navigate('/company')
+  }
+
+  const goSystem = () => {
+    navigate('/system')
+  }
+
+  const goVege = () => {
+    navigate('/vege')
+  }
+
+  const goProduct = () => {
+    navigate('/product')
+  }
 
   return (
     <div className="top-nav">
@@ -17,10 +41,11 @@ const TopNavigation = () => {
         </div>
         <div className="menu-list">
           <span class="material-symbols-outlined">menu</span>
-          <div>HOME</div>
-          <div>ABOUT US</div>
-          <div>SERVICES</div>
-          <div>MORE</div>
+          <div onClick={goHome}>HOME</div>
+          <div onClick={goCompany}>회사 소개</div>
+          <div onClick={goSystem}>시스템 소개</div>
+          <div onClick={goVege}>채소 소개</div>
+          <div onClick={goProduct}>판매 소개</div>
         </div>
       </div>
     </div>

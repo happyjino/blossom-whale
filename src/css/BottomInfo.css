@@ -80,6 +80,7 @@
 
 @media (min-width: 486px) {
   .bottom-info {
+    margin-top: 3em;
     display: flex;
     flex-direction: column;
     color: #4e4e4e;

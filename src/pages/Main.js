@@ -8,8 +8,14 @@ import 'swiper/css/scrollbar';
 import '../css/Main.css';
 import { useEffect, useState } from "react";
 import BottomInfo from "../components/BottomInfo";
+import { useNavigate } from "react-router-dom";
 
 const Main = () => {
+
+  const navigate = useNavigate();
+  const goVege = () => {
+    navigate('/vege');
+  }
 
   const [slideImgList, setSlideImgList] = useState([])
   const imgSrcList = ['NEW_8134', 'NEW_8007', 'NEW_4238', 'SU1_9714']
@@ -114,7 +120,7 @@ const Main = () => {
         <div className="product-part">
           <p className="product-title">Whale's VEGETABLE!</p>
           <p className="product-des">{productDes}</p>
-          <div className="link-button">재배작물 보러가기</div>
+          <div className="link-button" onClick={goVege}>재배작물 보러가기</div>
         </div>
         <img src={process.env.PUBLIC_URL + 'Logo.jpg'} />
       </div>

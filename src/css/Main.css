@@ -65,7 +65,7 @@
 
   .main-page .section2 .cate-link div {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 
     margin-bottom: 2em;
   }

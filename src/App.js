@@ -1,9 +1,15 @@
 import './App.css';
 import './css/TopNavigation.css'
 import './css/BottomInfo.css'
+import './css/Vege.css'
+import './css/Company.css'
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from './pages/Main';
+import Vege from './pages/Vege';
+import System from './pages/System';
+import Product from './pages/Product';
+import Company from './pages/Company';
 
 function App() {
   return (
@@ -11,6 +17,11 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/company" element={<Company />} />
+          <Route path="/vege" element={<Vege />} />
+          <Route path="/system" element={<System />} />
+          <Route path="/product" element={<Product />} />
+          
         </Routes>
       </div>
     </BrowserRouter>
