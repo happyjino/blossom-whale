@@ -33,7 +33,7 @@ const TopNavigation = () => {
           <span class="material-symbols-outlined">mail</span>
           <span class="material-symbols-outlined">mail</span>
         </div>
-        <div className="tel-box">012-3345-6789</div>
+        <div className="tel-box">052-244-0228</div>
       </div>
       <div className="second-line">
         <div className="main-logo">

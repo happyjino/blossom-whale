@@ -26,7 +26,7 @@ const BottomInfo = () => {
             <p style={{fontWeight: "bolder"}}>대표 하하하</p>
           </div>
           <div className="contact">
-            <p>012-1234-5678</p>
+            <p>052-244-0228</p>
             <p>blossomWhale@naver.com</p>
           </div>
         </div>

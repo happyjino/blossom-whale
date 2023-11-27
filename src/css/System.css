@@ -1,0 +1,45 @@
+@media (min-width: 486px) {
+  .system-page {
+    padding-top: 9.5em;
+    color: #4e4e4e;
+  }
+
+  .system-page .section {
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .system-page .section .title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .system-page .section .title span {
+    background-color: #fdd900;
+    padding: 0.3em;
+    margin-right: 1em;
+    border-radius: 0.5em;
+  }
+
+  .system-page .section img {
+    width: 50%;
+  }
+
+  .system-page .section .img-box {
+    width: 50%;
+  }
+
+  .system-page .section .img-box img {
+    width: 40%;
+    padding: 1em;
+  }
+
+  .system-page .section .desc {
+    margin-top: 1.5em;
+    font-size: 1.2em;
+    width: 70%;
+    white-space: pre-line;
+  }
+}
