@@ -296,7 +296,6 @@
   }
 
   .main-page .section5 .product-part {
-    width: 50%;
     padding-right: 3em;
     display: flex;
     flex-direction: column;
@@ -325,7 +324,7 @@
   }
 
   .main-page .section5 img {
-    width: 50%;
-    height: 70vh;
+    width: 30%;
+    /* height: 70vh; */
   }
 }
