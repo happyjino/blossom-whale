@@ -16,7 +16,6 @@
   .vege-page .section1 .vege-des {
     font-size: 1.3em;
     text-align: left;
-
   }
 
   .vege-page .section1 .vege-des p {
@@ -58,26 +57,31 @@
     display: flex;
     width: 100%;
     position: relative;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
   }
 
   .vege-page .section2 .des-box .vege-des {
+    width: 80%;
     display: flex;
     white-space: pre-line;
     margin: 2em 1.2em;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .vege-page .section2 .des-box .vege-des img {
-    position: absolute;
     width: 18em;
+    height: 18em;
   }
 
   .vege-page .section2 .des-box .vege-des p {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    font-size: 1.4em;
-    padding-top: 6em;
+    text-align: right;
+    font-size: 1.2em;
+    /* padding-top: 6em; */
   }
 
   .vege-page .section2 .des-box .vege-des p span {
@@ -86,20 +90,24 @@
     font-weight: bold;
   }
 
-  .vege-page .section2 .des-box .vege-des:nth-child(even) img{
+  /* .vege-page .section2 .des-box .vege-des:nth-child(even) img{
     right: 2em;
   }
 
   .vege-page .section2 .des-box .vege-des:nth-child(odd) img{
     left: 2em;
-  }
+  } */
 
-  .vege-page .section2 .des-box:nth-child(2) .vege-des:nth-child(1) img {
+  /* .vege-page .section2 .des-box:nth-child(2) .vege-des:nth-child(1) img {
     top: 5em;
-  }
+  } */
 
   .vege-page .section2 .des-box .vege-des:nth-child(odd) p {
-    text-align: right;
+    text-align: left;
   }
+
+  /* .vege-page .section2 .des-box .vege-des:nth-child(odd) img {
+    order: 1;
+  } */
 
 }

@@ -18,12 +18,12 @@ const BottomInfo = () => {
             <span class="material-symbols-outlined">mail</span>
           </div>
           <div className="address">
-            <p>울산광역시 울주군</p>
+            <p>울산광역시 울주군 범서읍 등넘길 69</p>
             <p style={{fontWeight: "bolder"}}>꽃피는고래</p>
           </div>
           <div className="ceo">
             <p>농업회사법인 꽃피는고래 주식회사</p>
-            <p style={{fontWeight: "bolder"}}>대표 하하하</p>
+            <p style={{fontWeight: "bolder"}}>대표 백미향</p>
           </div>
           <div className="contact">
             <p>052-244-0228</p>

@@ -25,6 +25,7 @@
 
   .system-page .section img {
     width: 50%;
+    border-radius: 40px;
   }
 
   .system-page .section .img-box {
