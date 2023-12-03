@@ -13,9 +13,23 @@ import { useNavigate } from "react-router-dom";
 const Main = () => {
 
   const navigate = useNavigate();
+
+  const goCompany = () => {
+    navigate('/company');
+  }
+
+  const goSystem = () => {
+    navigate('/system');
+  }
+
   const goVege = () => {
     navigate('/vege');
   }
+
+  const goProduct = () => {
+    navigate('/product');
+  }
+
 
   const [slideImgList, setSlideImgList] = useState([])
   const imgSrcList = ['NEW_8134', 'NEW_8007', 'NEW_4238', 'SU1_9714']
@@ -55,7 +69,7 @@ const Main = () => {
             꽃피는 고래를 소개합니다.
           </p>
           <div className="cate-link">
-            <div>
+            <div onClick={goCompany}>
               <div className="link-button">COMPANY</div>
               <ul>
                 <li>회사 의미</li>
@@ -63,7 +77,7 @@ const Main = () => {
                 <li>회사 연혁</li>
               </ul>
             </div>
-            <div>
+            <div onClick={goSystem}>
               <div className="link-button">SYSTEM</div>
               <ul>
                 <li>그린하우스 재배</li>
@@ -71,14 +85,14 @@ const Main = () => {
                 <li>순환식 분무수경재배 방식</li>
               </ul>
             </div>
-            <div>
+            <div onClick={goVege}>
               <div className="link-button">VEGETABLE</div>
               <ul>
                 <li>채소 종류</li>
                 <li>활용 방안</li>
               </ul>
             </div>
-            <div>
+            <div onClick={goProduct}>
               <div className="link-button">PRODUCT</div>
               <ul>
                 <li>기본 상품</li>
