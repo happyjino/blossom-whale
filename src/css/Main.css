@@ -230,6 +230,10 @@
   }
 
   .main-page .section2 .cate-link div {
+    cursor: pointer;
+  }
+
+  .main-page .section2 .cate-link div {
     margin: 0em 2em;
   }
 
