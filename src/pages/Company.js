@@ -13,32 +13,32 @@ const Company = () => {
   return (
     <div className="company-page">
       <TopNavigation />
-      <div className="section1">
+      <div className="section1 section">
         <img src={process.env.PUBLIC_URL + `assets/whiteLogo.png`} />
         <div className="desc1">
           <div className="desc1-title">저희 꽃피는 고래는요...</div>
           {companyDesc1}
         </div>
       </div>
-      <div className="section2">
+      <div className="section2 section">
         <img src={process.env.PUBLIC_URL + `assets/companyDesc2.png`} />
         <div className="desc2">
           {companyDesc2}
         </div>
       </div>
-      <div className="section3">
+      <div className="section3 section">
         <div className="desc-img">
           <div className="sub-desc">{subDesc1}</div>
           <span class="material-symbols-outlined">add</span>
           <div className="sub-desc">{subDesc2}</div>
-          <span class="material-symbols-outlined">arrow_right_alt</span>
+          <span class="material-symbols-outlined arrow">arrow_right_alt</span>
           <div className="sub-desc">{subDesc3}</div>
         </div>
         <div className="desc3">
           {companyDesc3}
         </div>
       </div>
-      <div className="section4">
+      <div className="section4 section">
         <div className="section4-title">회사 연혁</div>
         <ul className="company-history">
           <li>2023. 2. 28. 사회적 기업가 육성 사업 선정</li>

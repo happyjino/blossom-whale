@@ -1,3 +1,96 @@
+@media (max-width: 486px) {
+  .company-page {
+    color: #4e4e4e;
+  }
+
+  .company-page .section {
+    padding-top: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.5em;
+  }
+
+  .company-page .section img {
+    width: 90%;
+  }
+
+  .company-page .section1 .desc1 .desc1-title {
+    margin-bottom: 0.5em;
+    font-size: 1.3em;
+    font-weight: bolder;
+  }
+
+  .company-page .section1 .desc1 {
+    margin-top: 3em;
+    text-align: center;
+    width: 70%;
+    white-space: pre-line;
+    line-height: 1.7em;
+  }
+
+  .company-page .section2 img {
+    width: 80%;
+    border-radius: 50%;
+  }
+
+  .company-page .section2 .desc2 {
+    margin-top: 3em;
+    text-align: center;
+    width: 70%;
+    white-space: pre-line;
+    line-height: 1.7em;
+  }
+
+  .company-page .section3 .desc-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60em;
+  }
+
+  .company-page .section3 span.arrow {
+    font-size: 0px;
+  }
+
+  .company-page .section3 span.arrow::after{
+    content: "arrow_downward";
+    font-size: 30px;
+  }
+
+  .company-page .section3 .desc-img .sub-desc {
+    width: 20%;
+    /* background-color: #fdd900; */
+    border: 1px solid black;
+    margin: 1em 2em;
+    padding: 0.4em;
+    border-radius: 1em;
+    white-space: pre-line;
+  }
+
+  .company-page .section3 .desc-img span{
+  }  
+
+  .company-page .section3 .desc3 {
+    margin-top: 1em;
+    text-align: center;
+    width: 70%;
+    white-space: pre-line;
+    line-height: 1.7em;
+  }
+
+  .company-page .section4 .section4-title {
+  }
+
+  .company-page .section4 .company-history {
+    text-align: left;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 5em;
+  }
+}
+
 @media (min-width: 486px) {
   .company-page {
     padding-top: 9.5em;
