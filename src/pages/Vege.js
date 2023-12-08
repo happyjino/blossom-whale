@@ -70,7 +70,7 @@ const Vege = () => {
           <source src={process.env.PUBLIC_URL + 'assets/eat_video2.mp4'} type="video/mp4" />
         </video>
       </div>
-      <div>
+      <div className="how_to_eat">
         <img src={process.env.PUBLIC_URL + 'assets/how_to_eat.png'} />
       </div>
       <BottomInfo />

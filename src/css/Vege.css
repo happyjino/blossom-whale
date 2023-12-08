@@ -1,3 +1,134 @@
+@media (max-width: 486px) {
+  .vege-page {
+    color: #4e4e4e;
+  }
+
+  .vege-page .section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdd900;
+    /* padding: 5em 3em; */
+
+    font-size: 1em;
+  }
+
+  .vege-page .section1 .vege-des {
+    /* font-size: 1.3em; */
+    /* text-align: left; */
+  }
+
+  .vege-page .section1 .vege-des p {
+    background-color: #4e4e4e;
+    display: inline;
+    color: #fdd900;
+    padding: 0.2em 0.5em;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+  }
+
+  .vege-page .section1 .vege-des p span {
+    font-size: 0.8em;
+  }
+
+  .vege-page .section1 .vege-des ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .vege-page .section1 .vege-des li {
+    width: 100%;
+    white-space: pre-line;
+    margin: 0.5em 0em;
+    font-size: 0.9em;
+    /* text-align: center; */
+  }
+
+  .vege-page .section1 img {
+    width: 80%;
+    border-radius: 15%;
+    /* padding-bottom: 3em; */
+    margin-bottom: 3em;
+  }
+
+  .vege-page .section2 {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 0em;
+  }
+
+  .vege-page .section2 .section2-title {
+    font-size: 2em;
+    font-weight: bolder;
+  }
+
+  .vege-page .section2 .des-box {
+    display: flex;
+    width: 100%;
+    position: relative;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vege-page .section2 .des-box .vege-des {
+    width: 90%;
+    display: flex;
+    white-space: pre-line;
+    margin: 2em 1.2em;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .vege-page .section2 .des-box .vege-des img {
+    width: 40%
+  }
+
+  .vege-page .section2 .des-box .vege-des p {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 0.6em;
+    /* padding-top: 6em; */
+  }
+
+  .vege-page .section2 .des-box .vege-des p span {
+    font-size: 1.6em;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+  }
+
+  /* .vege-page .section2 .des-box .vege-des:nth-child(even) img{
+    right: 2em;
+  }
+
+  .vege-page .section2 .des-box .vege-des:nth-child(odd) img{
+    left: 2em;
+  } */
+
+  /* .vege-page .section2 .des-box:nth-child(2) .vege-des:nth-child(1) img {
+    top: 5em;
+  } */
+
+  .vege-page .section2 .des-box .vege-des:nth-child(odd) p {
+    text-align: left;
+  }
+
+  /* .vege-page .section2 .des-box .vege-des:nth-child(odd) img {
+    order: 1;
+  } */
+
+  .vege-page .how_to_eat img{
+    width: 90%;
+    margin-top: 3em;
+  }
+
+}
+
 @media (min-width: 486px) {
   .vege-page {
     padding-top: 9.5em;
