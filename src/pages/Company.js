@@ -15,14 +15,14 @@ const Company = () => {
       <TopNavigation />
       <div className="section1 section">
         <img src={process.env.PUBLIC_URL + `assets/whiteLogo.png`} />
-        <div className="desc1">
+        <div className="desc1 desc">
           <div className="desc1-title">저희 꽃피는 고래는요...</div>
           {companyDesc1}
         </div>
       </div>
       <div className="section2 section">
         <img src={process.env.PUBLIC_URL + `assets/companyDesc2.png`} />
-        <div className="desc2">
+        <div className="desc2 desc">
           {companyDesc2}
         </div>
       </div>
@@ -34,7 +34,7 @@ const Company = () => {
           <span class="material-symbols-outlined arrow">arrow_right_alt</span>
           <div className="sub-desc">{subDesc3}</div>
         </div>
-        <div className="desc3">
+        <div className="desc3 desc">
           {companyDesc3}
         </div>
       </div>

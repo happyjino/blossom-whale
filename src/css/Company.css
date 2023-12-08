@@ -8,11 +8,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 0.5em;
+    font-size: 0.6em;
   }
 
   .company-page .section img {
-    width: 90%;
+    width: 70%;
   }
 
   .company-page .section1 .desc1 .desc1-title {
@@ -21,25 +21,16 @@
     font-weight: bolder;
   }
 
-  .company-page .section1 .desc1 {
+  .company-page .section .desc {
     margin-top: 3em;
     text-align: center;
-    width: 70%;
+    width: 90%;
     white-space: pre-line;
     line-height: 1.7em;
   }
 
   .company-page .section2 img {
-    width: 80%;
     border-radius: 50%;
-  }
-
-  .company-page .section2 .desc2 {
-    margin-top: 3em;
-    text-align: center;
-    width: 70%;
-    white-space: pre-line;
-    line-height: 1.7em;
   }
 
   .company-page .section3 .desc-img {
@@ -71,14 +62,6 @@
 
   .company-page .section3 .desc-img span{
   }  
-
-  .company-page .section3 .desc3 {
-    margin-top: 1em;
-    text-align: center;
-    width: 70%;
-    white-space: pre-line;
-    line-height: 1.7em;
-  }
 
   .company-page .section4 .section4-title {
   }
