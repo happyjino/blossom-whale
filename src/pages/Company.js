@@ -14,7 +14,7 @@ const Company = () => {
     <div className="company-page">
       <TopNavigation />
       <div className="section1 section">
-        <img src={process.env.PUBLIC_URL + `assets/whiteLogo.png`} />
+        <img src={process.env.PUBLIC_URL + `assets/companyDesc22.png`} />
         <div className="desc1 desc">
           <div className="desc1-title">저희 꽃피는 고래는요...</div>
           {companyDesc1}
