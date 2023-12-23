@@ -1,6 +1,88 @@
+@media (max-width: 486px) {
+  .product-page {
+    color: #4e4e4e;
+  }
+
+  .product-page .section {
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-page .section img {
+    width: 90%;
+  }
+
+  .product-page .section .product-des-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .product-page .section .product-des-box .des-title {
+    font-size: 2em;
+    margin-bottom: 1em;
+    background-color: #fdd900;
+    padding: 0.3em;
+    border-radius: 0.5em;
+  }
+
+  .product-page .section .product-des-box img {
+    width: 90%;
+  }
+
+  .product-page .section .product-des-box .product-des {
+    white-space: pre-line;
+    margin-top: 2em;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+  }
+
+  .product-page .section .month-product-title {
+    font-size: 2em;
+    margin-bottom: 1em;
+    border: 3px solid black;
+    padding: 0.3em;
+    border-radius: 1em;
+  }
+
+  .product-page .section .basic-product {
+    font-size: 1em;
+    width: 100%;
+    margin: 0.2em 0em;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .basic-product .option {
+    padding: 0.5em;
+    background-color: #fdd900;
+    border-right: 1px solid black;
+    font-weight: bold;
+  }
+
+  .basic-product .product-name {
+    padding: 0.5em;
+  }
+
+  .basic-product .price {
+    padding: 0.5em;
+    padding-right: 0.5em;
+    font-weight: bold;
+  }
+
+  .section .month-product-title+img {
+    margin-bottom: 3em;
+  }
+
+}
+
 @media (min-width: 486px) {
   .product-page {
-    padding-top: 9.5em;
+    padding-top: 9.51em;
     color: #4e4e4e;
   }
 
