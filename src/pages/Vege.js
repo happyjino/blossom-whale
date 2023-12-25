@@ -9,7 +9,7 @@ const Vege = () => {
   const vegeDes1 = "기존 채소의 씁쓸한 맛은 잊어주세요!"
   const vegeDes2 = "유러피안 채소만의 부드러우면서도 아삭한 식감, \n 고소한 맛과 달콤한 맛의 균형있는 조화"
   const vegeDes3 = "그린하우스 재배로 폭염과 한파가 오더라도 \n 언제나 고품질의 신선한 채소를 맛 볼 수 있어요."
-  const vegeDes4 = "버터헤드, 로메인, 멀티리프, 롤로로사, 바타비아로 \n 구성된 신선한 꽃고래 채소 꾸러미 상품"
+  const vegeDes4 = "버터헤드, 로메인, 멀티리프, 롤로로사&비욘다, 바타비아로 \n 구성된 신선한 꽃고래 채소 꾸러미 상품"
 
   const vege1 = "롤로로사&비욘다는 국화과에 속하는 상추로 원산지는 이탈리아예요. \n 로사는 이탈리어로 '장미처럼 붉다'는 의미로 적갈색을 띠며 곱슬곱슬한 모양이에요. \n 이에 반해 비욘다는 초록색을 띠는 상추에요. \n 색이 고와 회나 여러가지 요리에 장식용으로 사용해도 좋아요."
   const vege2 = "도톰한 잎과 버터처럼 고소한 풍미를 지닌 버터헤드 \n 자라는 모습이 꼭 꽃이 피어나는 모습과 닮아서 보기만 해도 행복하답니다! \n 상추 특유의 쓴맛이 전혀 없고, 부드럽고 달달해요. \n 불면증 개선에도 도움이 됩니다. \n 햄버거용, 믹스 샐러드용, 쌈용으로 활용하면 좋아요."
@@ -58,10 +58,6 @@ const Vege = () => {
           <div className="vege-des">
             <img src={process.env.PUBLIC_URL + 'assets/vege3.jpg'} alt="채소3" width="100px" /> 
             <p><span>로메인</span>{vege5}</p>
-          </div>
-          <div className="vege-des">
-            <p><span>오크리프</span>{vege4}</p>
-            <img src={process.env.PUBLIC_URL + 'assets/vege7.jpg'} alt="채소4" width="100px" /> 
           </div>
         </div>
       </div>

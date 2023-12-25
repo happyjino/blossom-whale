@@ -27,7 +27,7 @@ const BottomInfo = () => {
           </div>
           <div className="contact">
             <p>052-244-0228</p>
-            <p>blossomWhale@naver.com</p>
+            <p>blooming_whale@naver.com</p>
           </div>
         </div>
       </div>

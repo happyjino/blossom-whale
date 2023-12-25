@@ -3,7 +3,7 @@ import TopNavigation from "../components/TopNavigation";
 
 const Product = () => {
   
-  const productDes = "버터헤드, 로메인, 멀티리프, 롤로로사&비욘다, 바타비아 중 \n 랜던 3종 이상으로 구성해 보내드립니다."
+  const productDes = "버터헤드, 로메인, 멀티리프, 롤로로사&비욘다, 바타비아 중 \n 랜덤 3종 이상으로 구성해 보내드립니다."
 
   return (
     <div className="product-page">
