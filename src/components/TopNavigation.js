@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const TopNavigation = () => {
@@ -24,6 +25,12 @@ const TopNavigation = () => {
     navigate('/product')
   }
 
+  const [menuOn, setMenuOn] = useState(false);
+  
+  const openMenu = () => {
+    setMenuOn(isOpen => !isOpen);
+  };
+
   return (
     <div className="top-nav">
       <div className="first-line">
@@ -37,16 +44,23 @@ const TopNavigation = () => {
       </div>
       <div className="second-line">
         <div className="main-logo">
-          <img src={process.env.PUBLIC_URL + 'Logo.jpg'} />
+          <img onClick={goHome} src={process.env.PUBLIC_URL + 'Logo.jpg'} />
         </div>
         <div className="menu-list">
-          <span class="material-symbols-outlined">menu</span>
+          <span class="material-symbols-outlined" onClick={openMenu}>menu</span>
           <div onClick={goHome}>HOME</div>
           <div onClick={goCompany}>회사 소개</div>
           <div onClick={goSystem}>시스템 소개</div>
           <div onClick={goVege}>채소 소개</div>
           <div onClick={goProduct}>판매 소개</div>
         </div>
+      </div>
+      <div className={menuOn ? "mobile-menu show-menu" : "mobile-menu"}>
+        <div onClick={goHome}>HOME</div>
+        <div onClick={goCompany}>회사 소개</div>
+        <div onClick={goSystem}>시스템 소개</div>
+        <div onClick={goVege}>채소 소개</div>
+        <div onClick={goProduct}>판매 소개</div>
       </div>
     </div>
   )

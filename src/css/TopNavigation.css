@@ -70,6 +70,40 @@
   .top-nav .menu-list div:hover {
     color: #ffffff;
   }
+
+  .mobile-menu {
+    height: 0;
+    background-color: #FDD900;
+    /* position: fixed; */
+    /* top: 0; */
+    /* border-radius: 0 0 30px 30px; */
+    z-index: 2;
+    overflow: hidden;
+    /* box-shadow: -3px 0px 10px rgb(46,42,39,30%); */
+    /* transition: var(--mainTransition); */
+    transition: all .5s;
+  }
+
+  .mobile-menu div {
+    padding: 0.5em;
+    font-size: 2em;
+    font-weight: bold;
+    height: 12vh;
+  }
+
+  .top-nav .show-menu {
+    background-color: #FDD900;
+    /* position: fixed; */
+    height: 80vh;
+  }
+
+  .top-nav .show-menu div {
+    padding: 0.5em;
+    font-size: 2em;
+    height: 12vh;
+    font-weight: bold;
+    /* cursor: pointer; */
+  }
 }
 
 @media (min-width: 486px) {
@@ -147,5 +181,9 @@
 
   .top-nav .menu-list div:hover {
     color: #ffffff;
+  }
+
+  .mobile-menu {
+    display: none;
   }
 }
