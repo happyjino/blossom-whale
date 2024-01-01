@@ -32,7 +32,7 @@ const Product = () => {
       </div>
       <div className="section">
         <div className="month-product-title">정기 구독 서비스</div>
-        <img src={process.env.PUBLIC_URL + `assets/month_product.jpeg`} />
+        <img src={process.env.PUBLIC_URL + `assets/month_product2.png`} />
       </div>
       <BottomInfo />
     </div>

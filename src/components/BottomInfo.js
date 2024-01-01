@@ -22,7 +22,7 @@ const BottomInfo = () => {
             <p style={{fontWeight: "bolder"}}>꽃피는고래</p>
           </div>
           <div className="ceo">
-            <p>농업회사법인 꽃피는고래 주식회사</p>
+            <p>농업회사법인 주식회사 꽃피는고래</p>
             <p style={{fontWeight: "bolder"}}>대표 백미향</p>
           </div>
           <div className="contact">
