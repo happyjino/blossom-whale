@@ -34,7 +34,7 @@ const Main = () => {
   const [slideImgList, setSlideImgList] = useState([])
   const imgSrcList = ['NEW_8134', 'NEW_8007', 'NEW_4238', 'SU1_9714']
 
-  const productDes = "꽃피는 고래는 \n 유럽형 상추를 \n 수경재배하고 있습니다."
+  const productDes = "꽃피는고래는 \n 유럽형 상추를 \n 수경재배하고 있습니다."
 
   useEffect(() => {
     const tempImgList = imgSrcList.map((item, idx) => (
@@ -56,24 +56,24 @@ const Main = () => {
     <div className="main-page">
       <TopNavigation />
       <div className="section1">
-        <div>{`안녕하세요. 꽃피는 고래 입니다!`}</div>
+        <div>{`안녕하세요. 꽃피는고래 입니다!`}</div>
         <div className="text-hello">{`HELLO!`}</div>
         <img src={process.env.PUBLIC_URL + 'Logo.jpg'} />
       </div>
       <div className="section2">
         <div>
           <p className="tel-box">
-            {`꽃피는 고래에 대해서 알고 싶으시다면? \n052-244-0228`}
+            {`꽃피는고래에 대해서 알고 싶으시다면? \n052-244-0228`}
           </p>
           <p className="text-box">
-            꽃피는 고래를 소개합니다.
+            꽃피는고래를 소개합니다.
           </p>
           <div className="cate-link">
             <div onClick={goCompany}>
               <div className="link-button">COMPANY</div>
               <ul>
                 <li>회사 의미</li>
-                <li>꽃피는 고래</li>
+                <li>꽃피는고래</li>
                 <li>회사 연혁</li>
               </ul>
             </div>
@@ -106,7 +106,7 @@ const Main = () => {
         <span class="material-symbols-outlined">arrow_back_ios</span>
         <div className="text-box">
           <h2>안녕하세요. 꽃피는고래 입니다!</h2>
-          <p>{`저희 농업회사법인 주식회사 꽃피는 고래는 발달장애인과 함께 수경재배방식으로 유러피안 채소를 재배하는 농원입니다. 자연까지 생각하는 기업, 꽃피는 그린하우스에서 정성으로 키워내 여러분의 문 앞에 건강함과 신선함을 전하겠습니다.`}</p>
+          <p>{`저희 농업회사법인 주식회사 꽃피는고래는 발달장애인과 함께 수경재배방식으로 유러피안 채소를 재배하는 농원입니다. 자연까지 생각하는 기업, 꽃피는 그린하우스에서 정성으로 키워내 여러분의 문 앞에 건강함과 신선함을 전하겠습니다.`}</p>
         </div>
         <span class="material-symbols-outlined">arrow_forward_ios</span>
       </div>
