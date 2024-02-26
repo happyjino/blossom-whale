@@ -40,23 +40,23 @@ const Vege = () => {
         <div className="section2-title">각 채소 설명</div>
         <div className="des-box">
           <div className="vege-des">
-            <img src={process.env.PUBLIC_URL + 'assets/vege5.jpg'} alt="채소1" width="100px" /> 
+            <img src={process.env.PUBLIC_URL + 'assets/lollo.png'} alt="채소1" width="100px" /> 
             <p><span>롤로로사&비욘다</span>{vege1}</p>
           </div>
           <div className="vege-des">
             <p><span>버터헤드</span>{vege2}</p>
-            <img src={process.env.PUBLIC_URL + 'assets/vege2.jpg'} alt="채소2" width="100px" /> 
+            <img src={process.env.PUBLIC_URL + 'assets/butter.png'} alt="채소2" width="100px" /> 
           </div>  
           <div className="vege-des">
-            <img src={process.env.PUBLIC_URL + 'assets/vege6.jpg'} alt="채소3" width="100px" /> 
+            <img src={process.env.PUBLIC_URL + 'assets/batavia.png'} alt="채소3" width="100px" /> 
             <p><span>바타비아</span>{vege3}</p>    
           </div>
           <div className="vege-des">
             <p><span>멀티리프</span>{vege4}</p>
-            <img src={process.env.PUBLIC_URL + 'assets/vege4.jpg'} alt="채소4" width="100px" /> 
+            <img src={process.env.PUBLIC_URL + 'assets/multi.png'} alt="채소4" width="100px" /> 
           </div>
           <div className="vege-des">
-            <img src={process.env.PUBLIC_URL + 'assets/vege3.jpg'} alt="채소3" width="100px" /> 
+            <img src={process.env.PUBLIC_URL + 'assets/romaine.png'} alt="채소3" width="100px" /> 
             <p><span>로메인</span>{vege5}</p>
           </div>
         </div>
