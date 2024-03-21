@@ -1,5 +1,6 @@
 import BottomInfo from "../components/BottomInfo";
 import TopNavigation from "../components/TopNavigation";
+import ReactPlayer from "react-player";
 
 const Company = () => {
 
@@ -37,6 +38,47 @@ const Company = () => {
         <div className="desc3 desc">
           {companyDesc3}
         </div>
+      </div>
+      <div className="video-section section">
+        <iframe
+          // width="560" height="315"
+          src="https://www.youtube.com/embed/m0GsdRi44DQ?si=s2bmwNy5qlcQlKaM"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div className="video-des">아래 3개의 영상은 이어지는 1개의 영상입니다</div>
+        <ReactPlayer
+          className="video-player"
+          url={process.env.PUBLIC_URL + 'assets/video/video1.mp4'}
+          // width='400px'
+          // height='300px'
+          // playing={true}
+          muted={false}
+          controls={true}
+          // loop={true}
+        />
+        <ReactPlayer
+          className="video-player"
+          url={process.env.PUBLIC_URL + 'assets/video/video2.mp4'}
+          // width='400px'
+          // height='300px'
+          // playing={true}
+          muted={false}
+          controls={true}
+          // loop={true}
+        />
+        <ReactPlayer
+          className="video-player"
+          url={process.env.PUBLIC_URL + 'assets/video/video3.mp4'}
+          // width='400px'
+          // height='300px'
+          // playing={true}
+          muted={false}
+          controls={true}
+          // loop={true}
+        />
       </div>
       <div className="section4 section">
         <div className="section4-title">회사 연혁</div>

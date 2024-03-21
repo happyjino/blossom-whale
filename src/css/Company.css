@@ -66,6 +66,28 @@
     white-space: pre-line;
   }
 
+  .company-page .video-section {
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company-page .video-des {
+    padding-top: 2em;
+    font-size: 1.5em;
+  }
+
+  .company-page .video-section iframe {
+    /* width: 90%; */
+  }
+
+  .company-page .video-section .video-player {
+    padding: 2em 0em;
+    width: 80% !important;
+    height: auto !important;
+  }
+
   .company-page .section4 .section4-title {
     font-size: 1.8em;
     font-weight: bolder;
@@ -168,6 +190,27 @@
     white-space: pre-line;
     font-size: 1.2em;
     line-height: 1.7em;
+  }
+
+  .company-page .video-section {
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company-page .video-des {
+    padding-top: 2em;
+    font-size: 1.5em;
+  }
+
+  .company-page .video-section iframe {
+    width: 700px;
+    height: 505px;
+  }
+
+  .company-page .video-section .video-player {
+    padding: 2em 0em;
   }
 
   .company-page .section4 {
