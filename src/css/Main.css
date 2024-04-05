@@ -3,6 +3,10 @@
     color: #4e4e4e;
   }
 
+  .modal_img{
+    width: 90%;
+  }
+
   .main-page .section1 {
     background-color: #fdd900; 
     
@@ -203,6 +207,10 @@
   .main-page {
     padding-top: 9.5em;
     color: #4e4e4e;
+  }
+
+  .modal_img {
+    width: 90%;
   }
 
   .main-page .section1 {

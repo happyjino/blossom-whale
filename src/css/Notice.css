@@ -1,0 +1,44 @@
+@media (max-width: 486px) {
+  .notice-page {
+    color: #4e4e4e;
+  }
+
+  .notice-page .img-section img {
+    width: 100%;
+
+  }
+
+  .notice-page .main-section {
+    font-size: 1.2em;
+    white-space: pre-line;
+    line-height: 1.5em; 
+    padding: 1em;
+  }
+
+  .notice-page .main-section .main2 {
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 486px) {
+  .notice-page {
+    color: #4e4e4e;
+    padding-top: 9.51em;
+  }
+
+  .notice-page .img-section img {
+    width: 40em;
+
+  }
+
+  .notice-page .main-section {
+    font-size: 1.2em;
+    white-space: pre-line;
+    line-height: 1.5em; 
+  }
+
+  .notice-page .main-section .main2 {
+    font-weight: bold;
+  }
+}
+

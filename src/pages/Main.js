@@ -9,8 +9,34 @@ import '../css/Main.css';
 import { useEffect, useState } from "react";
 import BottomInfo from "../components/BottomInfo";
 import { useNavigate } from "react-router-dom";
+import Modal from "react-modal";
 
 const Main = () => {
+
+  const [isOpen, setIsOpen] = useState(true)
+
+  const openPopUp = () => {
+    setIsOpen(true)
+  }
+
+  const closePopUp = () => {
+    setIsOpen(false)
+  }
+
+  const customStyles = {
+    overlay: {
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      zIndex: "999",
+    },
+    content: {
+      maxWidth: "300px",
+      height: "400px",
+      margin: "auto",
+      borderRadius: "4px",
+      boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+      padding: "20px",
+    },
+  }
 
   const navigate = useNavigate();
 
@@ -28,6 +54,10 @@ const Main = () => {
 
   const goProduct = () => {
     navigate('/product');
+  }
+
+  const goNotice = () => {
+    navigate('/notice');
   }
 
 
@@ -55,6 +85,12 @@ const Main = () => {
   return (
     <div className="main-page">
       <TopNavigation />
+      <Modal isOpen={isOpen} onRequestClose={closePopUp} style={customStyles}>
+        <h1>채용 공고</h1>
+        <img className="modal_img" src={process.env.PUBLIC_URL + 'assets/incruit_img.webp'} />
+        <p onClick={goNotice}>보러가기(클릭)</p>
+        <button onClick={closePopUp}>닫기</button>
+      </Modal>
       <div className="section1">
         <div>{`안녕하세요. 꽃피는고래 입니다!`}</div>
         <div className="text-hello">{`HELLO!`}</div>
