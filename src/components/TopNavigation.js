@@ -57,7 +57,7 @@ const TopNavigation = () => {
           <div onClick={goSystem}>시스템 소개</div>
           <div onClick={goVege}>채소 소개</div>
           <div onClick={goProduct}>판매 소개</div>
-          <div onClick={goNotice}>채용 공고</div>
+          {/* <div onClick={goNotice}>채용 공고</div> */}
         </div>
       </div>
       <div className={menuOn ? "mobile-menu show-menu" : "mobile-menu"}>
@@ -66,7 +66,7 @@ const TopNavigation = () => {
         <div onClick={goSystem}>시스템 소개</div>
         <div onClick={goVege}>채소 소개</div>
         <div onClick={goProduct}>판매 소개</div>
-        <div onClick={goNotice}>채용 공고</div>
+        {/* <div onClick={goNotice}>채용 공고</div> */}
       </div>
     </div>
   )

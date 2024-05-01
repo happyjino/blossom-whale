@@ -85,12 +85,12 @@ const Main = () => {
   return (
     <div className="main-page">
       <TopNavigation />
-      <Modal isOpen={isOpen} onRequestClose={closePopUp} style={customStyles}>
+      {/* <Modal isOpen={isOpen} onRequestClose={closePopUp} style={customStyles}>
         <h1>채용 공고</h1>
         <img className="modal_img" src={process.env.PUBLIC_URL + 'assets/incruit_img.webp'} />
         <p onClick={goNotice}>보러가기(클릭)</p>
         <button onClick={closePopUp}>닫기</button>
-      </Modal>
+      </Modal> 채용 공고 중지*/}
       <div className="section1">
         <div>{`안녕하세요. 꽃피는고래 입니다!`}</div>
         <div className="text-hello">{`HELLO!`}</div>
