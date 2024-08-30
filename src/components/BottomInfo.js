@@ -12,10 +12,10 @@ const BottomInfo = () => {
         <div className="company-info">
           <div className="sns-link">
             <h2>Farm Office</h2>
-            <span class="material-symbols-outlined">mail</span>
-            <span class="material-symbols-outlined">mail</span>
-            <span class="material-symbols-outlined">mail</span>
-            <span class="material-symbols-outlined">mail</span>
+            <span className="material-symbols-outlined">mail</span>
+            <span className="material-symbols-outlined">mail</span>
+            <span className="material-symbols-outlined">mail</span>
+            <span className="material-symbols-outlined">mail</span>
           </div>
           <div className="address">
             <p>울산광역시 울주군 범서읍 등넘길 69</p>
@@ -32,7 +32,7 @@ const BottomInfo = () => {
         </div>
       </div>
       <div className="copyright">
-        <span class="material-symbols-outlined">copyright</span>
+        <span className="material-symbols-outlined">copyright</span>
         <p>2023 by Blossom-Whale</p>
       </div>
     </div>

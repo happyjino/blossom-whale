@@ -6,6 +6,7 @@ import './css/Company.css'
 import './css/System.css'
 import './css/Product.css'
 import './css/Notice.css'
+import './css/News.css'
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from './pages/Main';
@@ -14,6 +15,7 @@ import System from './pages/System';
 import Product from './pages/Product';
 import Company from './pages/Company';
 import Notice from './pages/Notice';
+import News from './pages/News';
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
           <Route path="/system" element={<System />} />
           <Route path="/product" element={<Product />} />
           <Route path="/notice" element={<Notice />} />
+          <Route path="/news" element={<News />} />
         </Routes>
       </div>
     </BrowserRouter>
