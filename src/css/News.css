@@ -14,7 +14,7 @@
     align-items: center;
     width: 90%;
     margin-bottom: 1.5em;
-    border: 5px solid black;
+    /* border: 5px solid black; */
   }
 
   .news-page .section .title {
